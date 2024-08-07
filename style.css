@@ -1,39 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(100deg, #260bee, #ff0000);
-
+    background: linear-gradient(135deg,yellowgreen ,darkblue);
 }
-.calculator{
-    border: 2px solid black;
+
+.calculator {
     border-radius: 10px;
     padding: 30px;
-    background-color: #00047e;
-    box-shadow: -5px -5px 100px yellow;
+    background-color: #0f177b;
+    box-shadow: 6px 6px 20px 10px black;
 }
-button{
+
+button {
     width: 60px;
     height: 60px;
     margin: 10px;
     border-radius: 50%;
     background: transparent;
     color: white;
-    box-shadow: -2px -2px 16px yellow;
+    box-shadow: 3px 3px 5px 0px rgb(0 0 0);
     cursor: pointer;
     font-size: 20px;
     border: none;
 }
 
-#inputBox{
+#inputBox {
     text-align: right;
     width: 315px;
     border-radius: 20px;
@@ -41,17 +42,44 @@ button{
     margin: 10px;
     font-size: 25px;
     background: transparent;
-    border: 1px solid yellow;
+    border: 4px solid black;
     color: white;
 }
-input::placeholder{
+
+input::placeholder {
     color: white;
 }
-.operator{
+
+.operator {
     color: #d0ff00;
 }
-.equalBtn{
+
+.equalBtn {
     background-color: red;
+}
+
+@media (max-width : 450px) {
+
+    .calculator {
+        background-color: rgb(7, 62, 109);
+        padding: 10px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        margin: 7px;
+        font-size: 20px;
+    }
+
+    #inputBox {
+        width: 265px;
+        padding: 10px;
+        margin: 5px;
+        margin-bottom: 10px;
+        font-size: 25px;
+        border: 3px solid black;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
